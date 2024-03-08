@@ -4,7 +4,7 @@ import Login from './pages/Login';
 import ResetPassword from './pages/ResetPassword';
 import ForgetPassword from './pages/ForgetPassword';
 import MainLayout from './components/MainLayout';
-import Dashboard from './pages/Dashboard.JS';
+import DashboardNew from './pages/DashboardNew';
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/reset-password' element={<ResetPassword />} />
-          <Route path='/forget-passwrd' element={<ForgetPassword />} />
+          <Route path='/forgot-password' element={<ForgetPassword />} />
           <Route path='/admin' element={<MainLayout />}>
-            <Route index element={<Dashboard />} />
+            <Route index element={<DashboardNew />} />
           </Route>
         </Routes>
       </Router>
