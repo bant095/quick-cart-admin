@@ -9,7 +9,9 @@ import { ImBlog } from 'react-icons/im';
 import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
 import { Layout, Menu, Button, theme } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import { IoNotifications } from 'react-icons/io5';
 import { Outlet } from 'react-router-dom';
+
 const { Header, Sider, Content } = Layout;
 
 const MainLayout = () => {
@@ -141,6 +143,7 @@ const MainLayout = () => {
       </Sider>
       <Layout className='site-layout'>
         <Header
+          className='d-flex align-items-center justify-content-between ps-1 pe-5'
           style={{
             padding: 0,
             background: colorBgContainer,
@@ -153,6 +156,29 @@ const MainLayout = () => {
               onClick: () => setCollapsed(!collapsed),
             }
           )}
+
+          <div className='d-flex gap-4 align-items-center'>
+            <div className='position-relative'>
+              <IoNotifications className='fs-4' />
+              <span className='badge bg-warning rounded-circle p-1 position-absolute'>
+                3
+              </span>
+            </div>
+            <div className='d-flex gap-3 align-items-center'>
+              <div>
+                <img
+                  width={32}
+                  height={32}
+                  src='https://www.upwork.com/profile-portraits/c1X0VIeAh_HFzjWTXTrj9ACqtnYP0VSS3BJflwpEO9Q5RuxyRuch_8rWpERXCZrYUH'
+                  alt=''
+                />
+              </div>
+              <div>
+                <h5 className='mb-0'>Alfred Ayodeji</h5>
+                <p className='mb-0'>alfred@gmail.com</p>
+              </div>
+            </div>
+          </div>
         </Header>
         <Content
           style={{
