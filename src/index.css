@@ -39,7 +39,12 @@ body {
 }
 
 main {
+  height: 85vh;
   overflow-y: scroll;
+  background-color: transparent !important;
+}
+main::-webkit-scrollbar {
+  width: 0px;
 }
 .sm-logo {
   display: none;
@@ -80,4 +85,12 @@ main {
 .ant-layout-header div .badge {
   top: 16px;
   right: -6px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
 }
