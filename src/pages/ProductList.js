@@ -1,5 +1,7 @@
 import React from 'react';
 import { Table } from 'antd';
+import { FaRegEdit } from 'react-icons/fa';
+import { MdDelete } from 'react-icons/md';
 
 const columns = [
   {
@@ -34,7 +36,7 @@ for (let i = 0; i < 46; i++) {
 const ProductList = () => {
   return (
     <div>
-      <h3 className='mb-4'>Product Category</h3>
+      <h3 className='mb-4 title'>Product Category</h3>
       <div>
         <Table columns={columns} dataSource={data1} />
       </div>

@@ -9,7 +9,7 @@ const ForgetPassword = () => {
       <br />
 
       <div className='my-5 w-25 bg-white rounded-3 mx-auto text-dark p-4'>
-        <h3 className='text-center'>Forget Password</h3>
+        <h3 className='text-center title'>Forget Password</h3>
         <p className='text-center'>Please enter your new Password password</p>
         <form action=''>
           <CustomInput type='text' label='Email Address' id='email' />

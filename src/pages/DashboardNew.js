@@ -116,59 +116,59 @@ const DashboardNew = () => {
   };
   return (
     <div>
-      <h3 className='mb-4'>Dashboard</h3>
+      <h3 className='mb-4 title'>Dashboard</h3>
       <div className='d-flex justify-content-between align-items-center gap-3'>
         <div className='d-flex justify-content-between align-items-end flex-grow-1 p-3 bg-white rounded-3'>
           <div>
-            <p className=''>Total</p>
-            <h3>$1100</h3>
+            <p className='desc'>Total</p>
+            <h4 className='mb-0 sub-title'>$1100</h4>
           </div>
           <div className='d-flex flex-column align-items-end'>
             <h6 className='green'>
               <GoArrowDownRight /> 32%
             </h6>
-            <p className='mb-0'>Compared To April 2023</p>
+            <p className='mb-0 desc'>Compared To April 2023</p>
           </div>
         </div>
         <div className='d-flex justify-content-between align-items-end flex-grow-1 p-3 bg-white rounded-3'>
           <div>
-            <p className=''>Total</p>
-            <h3>$110.39</h3>
+            <p className='desc'>Total</p>
+            <h4 className='mb-0 sub-title'>$110.39</h4>
           </div>
           <div className='d-flex flex-column align-items-end'>
             <h6 className='red'>
               <GoArrowDownRight /> 32%
             </h6>
-            <p className='mb-0'>Compared To April 2023</p>
+            <p className='mb-0 desc'>Compared To April 2023</p>
           </div>
         </div>
         <div className='d-flex justify-content-between align-items-end flex-grow-1 p-3 bg-white rounded-3'>
           <div>
-            <p className=''>Total</p>
-            <h3>100</h3>
+            <p className='desc'>Total</p>
+            <h4 className='mb-0 sub-title'>100</h4>
           </div>
           <div className='d-flex flex-column align-items-end'>
             <h6 className='green'>
               <GoArrowDownRight /> 32%
             </h6>
-            <p className='mb-0'>Compared To April 2023</p>
+            <p className='mb-0 desc'>Compared To April 2023</p>
           </div>
         </div>
       </div>
       <div className='mt-4'>
-        <h3 className='mb-4'> Income Statics</h3>
+        <h3 className='mb-4 title'> Income Statics</h3>
         <div>
           <Column {...config} />
         </div>
       </div>
       <div className='mt-4'>
-        <h3 className='mb-4'>Recent Orders</h3>
+        <h3 className='mb-4 title'>Recent Orders</h3>
         <div>
           <Table columns={columns} dataSource={data1} />
         </div>
       </div>
       <div className='my-4'>
-        <h3 className='mb-4'>Recent Reviews</h3>
+        <h3 className='mb-4 title'>Recent Reviews</h3>
         <div>
           <Table columns={columns} dataSource={data1} />
         </div>

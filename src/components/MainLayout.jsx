@@ -8,7 +8,7 @@ import { FaClipboardList, FaClipboardQuestion } from 'react-icons/fa6';
 import { ImBlog } from 'react-icons/im';
 import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
 import { Layout, Menu, Button, theme } from 'antd';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { IoNotifications } from 'react-icons/io5';
 import { Outlet } from 'react-router-dom';
 
@@ -157,7 +157,7 @@ const MainLayout = () => {
             }
           )}
 
-          <div className='d-flex gap-4 align-items-center'>
+          <div className='d-flex gap-4 align-items-center drop-down'>
             <div className='position-relative'>
               <IoNotifications className='fs-4' />
               <span className='badge bg-warning rounded-circle p-1 position-absolute'>
@@ -173,13 +173,42 @@ const MainLayout = () => {
                   alt=''
                 />
               </div>
-              <div>
+              <div
+                type='button'
+                id='dropdownMenuButton1'
+                data-bs-toggle='dropdown'
+                aria-expanded='false'
+              >
                 <h5 className='mb-0'>Alfred Ayodeji</h5>
                 <p className='mb-0'>alfred@gmail.com</p>
+              </div>
+              <div
+                className='dropdown-menu'
+                aria-labelledby='dropdownMenuButton1'
+              >
+                <li>
+                  <Link
+                    className='dropdown-item py-1 mb-1'
+                    style={{ height: 'auto', lineHeight: '20px' }}
+                    to='/'
+                  >
+                    View Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className='dropdown-item py-1 mb-1'
+                    style={{ height: 'auto', lineHeight: '20px' }}
+                    to='/'
+                  >
+                    Signout
+                  </Link>
+                </li>
               </div>
             </div>
           </div>
         </Header>
+
         <Content
           style={{
             margin: '24px 16px',
